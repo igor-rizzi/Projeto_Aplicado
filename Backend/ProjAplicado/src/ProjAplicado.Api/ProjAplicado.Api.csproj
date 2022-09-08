@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\ProjAplicado.Business\ProjeAplicado.Business\ProjAplicado.Business.csproj" />
-    <ProjectReference Include="..\src\ProjAplicado.Data\ProjAplicado.Data\ProjAplicado.Data.csproj" />
+    <ProjectReference Include="..\ProjAplicado.Data\ProjAplicado.Data.csproj" />
+    <ProjectReference Include="..\ProjeAplicado.Business\ProjAplicado.Business.csproj" />
   </ItemGroup>
 
 </Project>
