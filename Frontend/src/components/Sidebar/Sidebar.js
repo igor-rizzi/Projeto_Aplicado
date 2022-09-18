@@ -233,7 +233,7 @@ export default function Sidebar() {
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/colors/notus"
+                  href=""
                   target="_blank"
                   className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                 >
@@ -244,7 +244,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus"
+                  href=""
                   target="_blank"
                   className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                 >
@@ -255,7 +255,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/angular/overview/notus"
+                  href="learning-lab/tailwind/angular/overview/notus"
                   target="_blank"
                   className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                 >
@@ -266,7 +266,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/js/overview/notus"
+                  href="learning-lab/tailwind/js/overview/notus"
                   target="_blank"
                   className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                 >
@@ -277,7 +277,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus"
+                  href="learning-lab/tailwind/nextjs/overview/notus"
                   target="_blank"
                   className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                 >
@@ -288,7 +288,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus"
+                  href="learning-lab/tailwind/react/overview/notus"
                   target="_blank"
                   className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                 >
@@ -299,7 +299,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/svelte/overview/notus"
+                  href="learning-lab/tailwind/svelte/overview/notus"
                   target="_blank"
                   className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                 >
@@ -310,7 +310,7 @@ export default function Sidebar() {
 
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/vue/overview/notus"
+                  href="learning-lab/tailwind/vue/overview/notus"
                   target="_blank"
                   className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"
                 >
