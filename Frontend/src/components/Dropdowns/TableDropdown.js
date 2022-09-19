@@ -19,7 +19,7 @@ const NotificationDropdown = () => {
     <>
       <a
         className="text-blueGray-500 py-1 px-3"
-        href="#pablo"
+        href=""
         ref={btnDropdownRef}
         onClick={(e) => {
           e.preventDefault();
@@ -36,31 +36,22 @@ const NotificationDropdown = () => {
         }
       >
         <a
-          href="#pablo"
+          href=""
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
           onClick={(e) => e.preventDefault()}
         >
-          Action
+          Excluir
         </a>
         <a
-          href="#pablo"
+          href=""
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
           onClick={(e) => e.preventDefault()}
         >
-          Another action
-        </a>
-        <a
-          href="#pablo"
-          className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-          }
-          onClick={(e) => e.preventDefault()}
-        >
-          Something else here
+          Editar
         </a>
       </div>
     </>

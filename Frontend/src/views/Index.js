@@ -31,7 +31,7 @@ export default function Landing() {
                   <h1 className="text-white font-semibold text-4xl">
                     Revolucionamos!
                   </h1>
-                  <p className="mt-4 text-lg text-blueGray-200">
+                  <p className="mt-3 text-lg text-blueGray-200">
                   A HIREDEV é uma plataforma criada para a simplificação e centralização dos processos que envolvem todo o decurso da contratação.
                   </p>
                 </div>

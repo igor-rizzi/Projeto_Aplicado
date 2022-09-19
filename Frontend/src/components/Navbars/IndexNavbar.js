@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 // components
 
-import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -14,7 +13,7 @@ export default function Navbar(props) {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
               to="/"
-              className="text-blueGray-700 text-l font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+              className="text-blueGray-700 text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
             >
               HIREDEV
             </Link>
@@ -35,7 +34,6 @@ export default function Navbar(props) {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="flex items-center">
-                <IndexDropdown />
               </li>
               <li className="flex items-center">
                 <a
@@ -54,6 +52,16 @@ export default function Navbar(props) {
                   target="_blank"
                 >
                   <p>CADASTRAR</p>
+                </a>
+              </li>
+
+              <li className="flex items-center">
+                <a
+                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  href="/admin"
+                  target="_blank"
+                >
+                  <p>WEB ADMIN</p>
                 </a>
               </li>
             </ul>

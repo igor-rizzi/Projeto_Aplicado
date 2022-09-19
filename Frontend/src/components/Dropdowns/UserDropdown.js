@@ -50,7 +50,7 @@ const UserDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Action
+          Cadastrar Vagas
         </a>
         <a
           href="#pablo"
@@ -59,7 +59,7 @@ const UserDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Another action
+          Encontrar Candidatos
         </a>
         <a
           href="#pablo"
@@ -68,7 +68,7 @@ const UserDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Something else here
+          Ver processos ativos
         </a>
         <div className="h-0 my-2 border border-solid border-blueGray-100" />
         <a
@@ -78,7 +78,7 @@ const UserDropdown = () => {
           }
           onClick={(e) => e.preventDefault()}
         >
-          Seprated link
+          Configurações
         </a>
       </div>
     </>
