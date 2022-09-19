@@ -20,7 +20,7 @@ export default function CardBarChart() {
             label: new Date().getFullYear(),
             backgroundColor: "#ed64a6",
             borderColor: "#ed64a6",
-            data: [30, 78, 56, 34, 100, 45, 13],
+            data: [30, 78, 56, 34, 180, 45, 13],
             fill: false,
             barThickness: 8,
           },
@@ -108,7 +108,7 @@ export default function CardBarChart() {
                 Performance
               </h6>
               <h2 className="text-blueGray-700 text-xl font-semibold">
-                Total
+                Movimento Mensal (Contratações)
               </h2>
             </div>
           </div>

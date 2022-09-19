@@ -61,7 +61,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="#"
                       >
                         Sobre nós
                       </a>
@@ -69,7 +69,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="#"
                       >
                         Blog
                       </a>
@@ -77,7 +77,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="#"
                       >
                         LinkedIn
                       </a>
@@ -92,7 +92,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="#"
                       >
                         Termos & Condições
                       </a>
@@ -100,7 +100,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="#"
                       >
                         Politica e Privacidade
                       </a>
@@ -108,7 +108,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href=""
+                        href="#"
                       >
                         Contate-nos
                       </a>
@@ -124,7 +124,7 @@ export default function Footer() {
               <div className="text-sm text-blueGray-500 font-semibold py-1">
                 Copyright © {new Date().getFullYear()}{" "}
                 <a
-                  href=""
+                  href="#"
                   className="text-blueGray-500 hover:text-blueGray-800"
                 >
                   Hiredev Sistemas

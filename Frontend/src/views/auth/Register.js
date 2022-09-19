@@ -107,7 +107,7 @@ export default function Register() {
                       <span className="ml-2 text-sm font-semibold text-blueGray-600">
                         Eu aceito os termos{" "}
                         <a
-                          href="#pablo"
+                          href="#"
                           className="text-lightBlue-500"
                           onClick={(e) => e.preventDefault()}
                         >

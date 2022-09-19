@@ -99,7 +99,7 @@ export default function Login() {
             <div className="flex flex-wrap mt-6 relative">
               <div className="w-1/2">
                 <a
-                  href="#pablo"
+                  href="#"
                   onClick={(e) => e.preventDefault()}
                   className="text-blueGray-200"
                 >

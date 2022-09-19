@@ -15,9 +15,9 @@ export default function FooterSmall(props) {
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4">
               <div className="text-sm text-blueGray-500 font-semibold py-1 text-center md:text-left">
-                 © {new Date().getFullYear()}{" "}
+                © {new Date().getFullYear()}{" "}
                 <a
-                  href=""
+                  href="#"
                   className="text-white hover:text-blueGray-300 text-sm font-semibold py-1"
                 >
                   Hiredev Sistemas
@@ -28,7 +28,7 @@ export default function FooterSmall(props) {
               <ul className="flex flex-wrap list-none md:justify-end  justify-center">
                 <li>
                   <a
-                    href=""
+                    href="#"
                     className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
                   >
                     Sobre nós
@@ -36,7 +36,7 @@ export default function FooterSmall(props) {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="#"
                     className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
                   >
                     Contato

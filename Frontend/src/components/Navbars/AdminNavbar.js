@@ -11,10 +11,10 @@ export default function Navbar() {
           {/* Brand */}
           <a
             className="text-white text-sm uppercase hidden lg:inline-block font-semibold"
-            href=""
+            href="#"
             onClick={(e) => e.preventDefault()}
           >
-            Dashboards
+            Estatísticas
           </a>
           {/* Form */}
           <form className="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">
