@@ -17,7 +17,7 @@ namespace ProjAplicado.Api.Controllers
         private readonly ApiDbContext _dbContext;
 
         public UsuarioController(
-            IUsuarioRepository usuarioRepository, 
+            IUsuarioRepository usuarioRepository,
             IUsuarioService usuarioService,
             IMapper mapper,
             ApiDbContext dbContext)
@@ -31,11 +31,22 @@ namespace ProjAplicado.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<UsuarioDto>> Adicionar(UsuarioDto usuarioDto)
         {
-            await _usuarioService.Adicionar(_mapper.Map<Usuario>(usuarioDto));
+            if (!ModelState.IsValid) return BadRequest();
+
+            var user = _mapper.Map<Usuario>(usuarioDto);
+            await _usuarioService.Adicionar(user);
 
             _dbContext.SaveChanges();
 
-            return Ok(usuarioDto);
+            return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IEnumerable<UsuarioDto>> ObterTodos()
+        {
+            var usuario = _mapper.Map<IEnumerable<UsuarioDto>>(await _usuarioRepository.ObterTodos());
+
+            return usuario;
         }
     }
 }

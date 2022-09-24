@@ -12,9 +12,10 @@ namespace ProjAplicado.Business.Services
             _usuarioRepository = usuarioRepository;
         }
 
-        public async Task Adicionar(Usuario usuario)
+        public async Task<bool> Adicionar(Usuario usuario)
         {
             await _usuarioRepository.Adicionar(usuario);
+            return true;
         }
     }
 }

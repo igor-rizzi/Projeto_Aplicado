@@ -9,6 +9,6 @@ namespace ProjAplicado.Business.Interfaces
 {
     public interface IUsuarioService
     {
-        Task Adicionar(Usuario usuario);
+        Task<bool> Adicionar(Usuario usuario);
     }
 }

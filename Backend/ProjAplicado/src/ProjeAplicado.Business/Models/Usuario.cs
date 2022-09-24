@@ -2,7 +2,6 @@
 {
     public class Usuario : Entity
     {
-        public Guid UsuarioId { get; set; }
 
         public string User { get; set; }
 
