@@ -72,7 +72,8 @@ export default function Landing() {
                       Acesse de qualquer lugar
                     </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Sistema totalmente WEB, acesse de qualquer lugar.
+                      Sistema totalmente WEB, acesse de qualquer lugar e de
+                      qualquer dispositivo.
                     </p>
                   </div>
                 </div>
@@ -153,10 +154,9 @@ export default function Landing() {
                   <h3 className="text-3xl font-semibold">A empresa</h3>
                   <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
                     Surgida a patir de um projeto na graduação, a empresa busca
-                    melhorar o processo entre os programadores e os
-                    recrutadores. Com a alta demanda do mercado, surge a
-                    necessidade de encontrar profissionais qualificados em um
-                    curto espaço de tempo.
+                    melhorar o processo entre programadores e recrutadores. Com
+                    a alta demanda do mercado, surge a necessidade de encontrar
+                    profissionais qualificados em um curto espaço de tempo.
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
@@ -168,7 +168,7 @@ export default function Landing() {
                         </div>
                         <div>
                           <h4 className="text-blueGray-500">
-                            Acompanhamos todo o processo
+                            Acompanhamos todo o processo de contratação
                           </h4>
                         </div>
                       </div>
@@ -182,7 +182,7 @@ export default function Landing() {
                         </div>
                         <div>
                           <h4 className="text-blueGray-500">
-                            Empresas de todas as linguagens
+                            Empresas de todas as linguagens de programação
                           </h4>
                         </div>
                       </div>
@@ -223,7 +223,7 @@ export default function Landing() {
             </div>
             <div className="flex flex-wrap">
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
+                <div className="px-7">
                   <img
                     alt="..."
                     src={require("assets/img/team-1-800x800.jpg")}
@@ -231,14 +231,20 @@ export default function Landing() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">SENAI</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Senai
+                    <p className="mt-1 text-sm text-blueGray-400 font-semibold">
+                      Serviço Nacional de Aprendizagem Industrial (SENAI) é uma
+                      instituição privada brasileira de interesse público, sem
+                      fins lucrativos, com personalidade jurídica de direito
+                      privado, estando fora da administração pública. Foi
+                      apontado pela Organização das Nações Unidas (ONU) em 2014
+                      como uma das principais instituições educacionais do
+                      Hemisfério sul.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
+                <div className="px-7">
                   <img
                     alt="..."
                     src={require("assets/img/team-2-800x800.jpg")}
@@ -246,14 +252,16 @@ export default function Landing() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">TESLA</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Tesla
+                    <p className="mt-1 text-sm text-blueGray-400 font-semibold">
+                      Desenvolve, produz e vende automóveis elétricos de alto
+                      desempenho, componentes para motores e transmissões para
+                      veículos elétricos e produtos à base de baterias.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
+                <div className="px-7">
                   <img
                     alt="..."
                     src={require("assets/img/team-3-800x800.jpg")}
@@ -261,14 +269,15 @@ export default function Landing() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">PAYPAL</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Paypal
+                    <p className="mt-1 text-sm text-blueGray-400 font-semibold">
+                      É uma das maiores do ramo por ser capaz de realizar
+                      pagamentos rápidos e auxiliar em envios de dinheiro.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
+                <div className="px-7">
                   <img
                     alt="..."
                     src={require("assets/img/team-4-470x470.png")}
@@ -276,8 +285,12 @@ export default function Landing() {
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">META</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Meta Inc.
+                    <p className="mt-2 text-sm text-blueGray-400 font-semibold">
+                      A Meta oferece outros produtos e serviços além de sua
+                      plataforma de rede social Facebook, incluindo Facebook
+                      Messenger, Facebook Watch e Facebook Portal. Também
+                      adquiriu Instagram, WhatsApp, Oculus VR, Giphy e
+                      Mapillary, e tem 9,9% de participação na Jio Platforms.
                     </p>
                   </div>
                 </div>
