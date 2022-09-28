@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 
 // components
@@ -135,7 +134,7 @@ export default function CardTable({ color }) {
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/padrao.png").default}
+                      src={require("assets/img/pessoa4.jpg").default}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
@@ -326,7 +325,7 @@ export default function CardTable({ color }) {
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
                     <img
-                      src={require("assets/img/padrao.png").default}
+                      src={require("assets/img/pessoa4.jpg").default}
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
                     ></img>
