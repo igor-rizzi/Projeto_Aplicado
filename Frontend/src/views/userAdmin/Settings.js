@@ -31,12 +31,42 @@ export default function Settings() {
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
+                        Primeiro Nome
+                      </label>
+                      <input
+                        type="text"
+                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        defaultValue="Cleiton"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-6/12 px-4">
+                    <div className="relative w-full mb-3">
+                      <label
+                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="grid-password"
+                      >
+                        Segundo Nome
+                      </label>
+                      <input
+                        type="text"
+                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        defaultValue="Salvagni"
+                      />
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-6/12 px-4">
+                    <div className="relative w-full mb-3">
+                      <label
+                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="grid-password"
+                      >
                         Nome de usuário
                       </label>
                       <input
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="senai.sc"
+                        defaultValue="cleitoncsalvagni"
                       />
                     </div>
                   </div>
@@ -51,7 +81,7 @@ export default function Settings() {
                       <input
                         type="email"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="contato@senaisc.com.br"
+                        defaultValue="contato@cleiton.com.br"
                       />
                     </div>
                   </div>
@@ -61,13 +91,12 @@ export default function Settings() {
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
-                        Nome Empresarial
+                        CPF
                       </label>
                       <input
-                        disabled={true}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="Serviço Nacional De Aprendizagem Industrial"
+                        defaultValue="000.000.000-00"
                       />
                     </div>
                   </div>
@@ -80,25 +109,21 @@ export default function Settings() {
                         Telefone
                       </label>
                       <input
-                        type={"text"}
+                        type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                         defaultValue="(49) 9 9999-9999"
                       />
                     </div>
-                  </div>
-                  <div className="w-full lg:w-6/12 px-4">
                     <div className="relative w-full mb-3">
                       <label
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
-                        CNPJ
+                        Data de nascimento
                       </label>
                       <input
-                        disabled={true}
-                        type={"text"}
+                        type="date"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="03.774.819/0001-02"
                       />
                     </div>
                   </div>
@@ -175,7 +200,7 @@ export default function Settings() {
                 <hr className="mt-6 border-b-1 border-blueGray-300" />
 
                 <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-                  Sobre
+                  SOBRE
                 </h6>
                 <div className="flex flex-wrap">
                   <div className="w-full lg:w-12/12 px-4">
@@ -184,15 +209,73 @@ export default function Settings() {
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
-                        Informações Adicionais
+                        UM POUCO SOBRE MIM
                       </label>
                       <textarea
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="O Serviço Nacional de Aprendizagem Industrial (SENAI) tem como objetivo estimular a inovação industrial por meio da educação, consultoria, pesquisa aplicada e serviços técnicos e tecnológicos que são decisivos para a competitividade das empresas do Estado e do Brasil."
+                        defaultValue="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec venenatis justo, malesuada cursus quam. Aenean vel pretium eros. Cras tincidunt ex quis metus fermentum maximus. Vestibulum lacinia nunc sit amet tincidunt malesuada. Integer ac pharetra lorem. Aliquam scelerisque eros dolor, ac vehicula mi varius non. Praesent molestie tempus sem feugiat placerat. Sed faucibus, libero eget tempus molestie, ipsum turpis aliquet felis, ac porttitor est lacus eu metus."
                         rows="4"
                       ></textarea>
                     </div>
+                  </div>
+                </div>
+
+                <hr className="mt-6 border-b-1 border-blueGray-300" />
+
+                <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                  CURRICULO
+                </h6>
+                <div className="flex flex-wrap">
+                  <div className="relative w-full mb-3">
+                    <label
+                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                      htmlFor="grid-password"
+                    >
+                      MEU CURRICULO
+                    </label>
+                    <input
+                      type="file"
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                    />
+                  </div>
+                  <div className="relative w-full mb-3">
+                    <label
+                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2 mt-3"
+                      htmlFor="grid-password"
+                    >
+                      DOMINIO DE LINGUAGENS
+                    </label>
+                    <input
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      placeholder="Descreva suas linguagens e respectivos níveis"
+                    />
+                  </div>
+                  <div className="relative w-full mb-3 mt-3">
+                    <label
+                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                      htmlFor="grid-password"
+                    >
+                      FALE UM POUCO SOBRE SUAS EXPERIENCIAS
+                    </label>
+                    <textarea
+                      placeholder="Experiências"
+                      type="text"
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <div className="relative mb-3 mt-3 flex">
+                    <label
+                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2 mr-3"
+                      htmlFor="grid-password"
+                    >
+                      DISPONÍVEL PARA INICIO IMEDIATO?
+                    </label>
+                    <input
+                      type={"checkbox"}
+                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring  ease-linear transition-all duration-150"
+                    />
                   </div>
                 </div>
               </form>

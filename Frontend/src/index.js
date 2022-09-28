@@ -11,6 +11,7 @@ import Auth from "layouts/Auth.js";
 
 // views without layouts
 
+import UserAdmin from "layouts/UserAdmin";
 import Index from "views/Index.js";
 
 ReactDOM.render(
@@ -18,6 +19,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/admin" component={Admin} />
       <Route path="/auth" component={Auth} />
+      <Route path="/user" component={UserAdmin} />
       <Route path="/" exact component={Index} />
       <Redirect from="*" to="/" />
     </Switch>

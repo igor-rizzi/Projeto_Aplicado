@@ -85,7 +85,7 @@ export default function Login() {
                   </div>
 
                   <div className="text-center mt-6">
-                    <Link to="/admin" className="text-blueGray-200">
+                    <Link to="#" className="text-blueGray-200">
                       <button
                         className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                         type="button"
@@ -99,6 +99,11 @@ export default function Login() {
             </div>
             <div className="flex flex-wrap mt-6 relative">
               <div className="w-1/2">
+                <Link to="/auth/register" className="text-blueGray-200">
+                  <small>Criar uma conta</small>
+                </Link>
+              </div>
+              <div className="w-1/2 text-right">
                 <a
                   href="#"
                   onClick={(e) => e.preventDefault()}
@@ -107,9 +112,11 @@ export default function Login() {
                   <small>Esqueceu a senha?</small>
                 </a>
               </div>
-              <div className="w-1/2 text-right">
-                <Link to="/auth/register" className="text-blueGray-200">
-                  <small>Criar uma nova conta</small>
+            </div>
+            <div className="flex flex-wrap relative">
+              <div className=" text-right">
+                <Link to="/auth/registerCnpj" className="text-blueGray-200">
+                  <small>Criar uma conta empresarial</small>
                 </Link>
               </div>
             </div>
