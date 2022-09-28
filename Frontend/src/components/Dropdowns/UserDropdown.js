@@ -1,5 +1,6 @@
-import React from "react";
 import { createPopper } from "@popperjs/core";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const UserDropdown = () => {
   // dropdown props
@@ -31,7 +32,7 @@ const UserDropdown = () => {
             <img
               alt="..."
               className="w-full rounded-full align-middle border-none shadow-lg"
-              src={require("assets/img/team-1-800x800.jpg").default}
+              src={require("assets/img/team-1-800x800.jpg")}
             />
           </span>
         </div>
@@ -52,34 +53,37 @@ const UserDropdown = () => {
         >
           Cadastrar Vagas
         </a>
-        <a
-          href="#"
-          className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-          }
-          onClick={(e) => e.preventDefault()}
-        >
-          Encontrar Candidatos
-        </a>
-        <a
-          href="/admin/tables"
-          className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-          }
-          onClick={(e) => e.preventDefault()}
-        >
-          Minhas Vagas
-        </a>
+        <Link to="/admin">
+          <a
+            href="#"
+            className={
+              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            }
+          >
+            Encontrar Candidatos
+          </a>
+        </Link>
+        <Link to="/admin/tables">
+          <a
+            href="#"
+            className={
+              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            }
+          >
+            Minhas Vagas
+          </a>
+        </Link>
         <div className="h-0 my-2 border border-solid border-blueGray-100" />
-        <a
-          href="/admin/settings"
-          className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-          }
-          onClick={(e) => e.preventDefault()}
-        >
-          Configurações
-        </a>
+        <Link to="/admin/settings">
+          <a
+            href="#"
+            className={
+              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            }
+          >
+            Configurações
+          </a>
+        </Link>
       </div>
     </>
   );

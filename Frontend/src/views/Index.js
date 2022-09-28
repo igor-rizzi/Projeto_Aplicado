@@ -1,10 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 // components
 
-import Navbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Navbar from "components/Navbars/IndexNavbar.js";
 
 export default function Landing() {
   return (
@@ -16,7 +13,7 @@ export default function Landing() {
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1588421357574-87938a86fa28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
+                "url('https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
             }}
           >
             <span
@@ -32,7 +29,9 @@ export default function Landing() {
                     Revolucionamos!
                   </h1>
                   <p className="mt-3 text-lg text-blueGray-200">
-                  A HIREDEV é uma plataforma criada para a simplificação e centralização dos processos que envolvem todo o decurso da contratação.
+                    A HIREDEV é uma plataforma criada para a simplificação e
+                    centralização dos processos que envolvem todo o decurso da
+                    contratação.
                   </p>
                 </div>
               </div>
@@ -69,9 +68,11 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                       <i className="fas fa-award"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Acesse de qualquer lugar</h6>
+                    <h6 className="text-xl font-semibold">
+                      Acesse de qualquer lugar
+                    </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    Sistema totalmente WEB, acesse de qualquer lugar.
+                      Sistema totalmente WEB, acesse de qualquer lugar.
                     </p>
                   </div>
                 </div>
@@ -83,9 +84,12 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
                       <i className="fas fa-retweet"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">+15 contratações por dia</h6>
+                    <h6 className="text-xl font-semibold">
+                      +15 contratações por dia
+                    </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    A HIREDEV é responsável por intermediar diversas contratações por dia.
+                      A HIREDEV é responsável por intermediar diversas
+                      contratações por dia.
                     </p>
                   </div>
                 </div>
@@ -97,9 +101,12 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
                       <i className="fas fa-fingerprint"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">+5000 empresas cadastradas</h6>
+                    <h6 className="text-xl font-semibold">
+                      +5000 empresas cadastradas
+                    </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    Empresas de diversos setores e países, cadastradas e ativas na plataforma.
+                      Empresas de diversos setores e países, cadastradas e
+                      ativas na plataforma.
                     </p>
                   </div>
                 </div>
@@ -145,9 +152,11 @@ export default function Landing() {
                   </div>
                   <h3 className="text-3xl font-semibold">A empresa</h3>
                   <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                  Surgida a patir de um projeto na graduação, a empresa busca melhorar o processo entre os programadores e os recrutadores. 
-
-Com a alta demanda do mercado, surge a necessidade de encontrar profissionais qualificados em um curto espaço de tempo.
+                    Surgida a patir de um projeto na graduação, a empresa busca
+                    melhorar o processo entre os programadores e os
+                    recrutadores. Com a alta demanda do mercado, surge a
+                    necessidade de encontrar profissionais qualificados em um
+                    curto espaço de tempo.
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
@@ -203,9 +212,12 @@ Com a alta demanda do mercado, surge a necessidade de encontrar profissionais qu
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Conheça nossos clientes</h2>
+                <h2 className="text-4xl font-semibold">
+                  Conheça nossos clientes
+                </h2>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
-                 Confira alguns clientes que utilizam a HIREDEV para fazer suas contratações
+                  Confira alguns clientes que utilizam a HIREDEV para fazer suas
+                  contratações
                 </p>
               </div>
             </div>
@@ -214,7 +226,7 @@ Com a alta demanda do mercado, surge a necessidade de encontrar profissionais qu
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-1-800x800.jpg").default}
+                    src={require("assets/img/team-1-800x800.jpg")}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
@@ -229,7 +241,7 @@ Com a alta demanda do mercado, surge a necessidade de encontrar profissionais qu
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-2-800x800.jpg").default}
+                    src={require("assets/img/team-2-800x800.jpg")}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
@@ -244,7 +256,7 @@ Com a alta demanda do mercado, surge a necessidade de encontrar profissionais qu
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-3-800x800.jpg").default}
+                    src={require("assets/img/team-3-800x800.jpg")}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
@@ -259,7 +271,7 @@ Com a alta demanda do mercado, surge a necessidade de encontrar profissionais qu
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={require("assets/img/team-4-470x470.png").default}
+                    src={require("assets/img/team-4-470x470.png")}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
@@ -297,8 +309,7 @@ Com a alta demanda do mercado, surge a necessidade de encontrar profissionais qu
 
           <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
             <div className="flex flex-wrap text-center justify-center">
-              <div className="w-full lg:w-6/12 px-4">
-              </div>
+              <div className="w-full lg:w-6/12 px-4"></div>
             </div>
           </div>
         </section>
