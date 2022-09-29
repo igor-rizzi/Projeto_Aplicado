@@ -1,7 +1,7 @@
 ﻿using ProjAplicado.Business.Models;
 using System.Linq.Expressions;
 
-namespace ProjAplicado.Business.Intefaces
+namespace ProjAplicado.Business.Interfaces.Repositories
 {
     public interface IRepository<TEntity> : IDisposable where TEntity : Entity
     {

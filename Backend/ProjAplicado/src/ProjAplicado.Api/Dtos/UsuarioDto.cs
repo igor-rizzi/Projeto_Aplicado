@@ -5,7 +5,7 @@ namespace ProjAplicado.Api.Dtos
     public class UsuarioDto
     {
         [Key]
-        public Guid UsuarioId { get; set; }
+        public Guid Id { get; set; }
 
         [Required(ErrorMessage = "O campo de Usuário é obrigatório!")]
         [StringLength(30, MinimumLength = 4)]

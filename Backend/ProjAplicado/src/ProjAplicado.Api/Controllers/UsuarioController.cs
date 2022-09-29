@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProjAplicado.Api.Dtos;
-using ProjAplicado.Business.Interfaces;
+using ProjAplicado.Business.Interfaces.Repositories;
+using ProjAplicado.Business.Interfaces.Services;
 using ProjAplicado.Business.Models;
 using ProjAplicado.Data.Context;
+using System.Linq.Expressions;
 
 namespace ProjAplicado.Api.Controllers
 {
@@ -44,7 +46,15 @@ namespace ProjAplicado.Api.Controllers
         [HttpGet]
         public async Task<IEnumerable<UsuarioDto>> ObterTodos()
         {
-            var usuario = _mapper.Map<IEnumerable<UsuarioDto>>(await _usuarioRepository.ObterTodos());
+            var usuarios = _mapper.Map<IEnumerable<UsuarioDto>>(await _usuarioRepository.ObterTodos());
+
+            return usuarios;
+        }
+
+        [HttpGet("{id:Guid}")]
+        public async Task<UsuarioDto> ObterPorId(Guid id)
+        {
+            var usuario = _mapper.Map<UsuarioDto>(await _usuarioRepository.ObterPorId(id));
 
             return usuario;
         }
