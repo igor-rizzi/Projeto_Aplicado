@@ -12,8 +12,10 @@ namespace ProjAplicado.Api.Configuration
         {
             services.AddScoped<ApiDbContext>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IVagaRepository, VagaRepository>();
 
             services.AddScoped<IUsuarioService, UsuarioService>();
+            services.AddScoped<IVagaService, VagaService>();
 
             return services;
         }

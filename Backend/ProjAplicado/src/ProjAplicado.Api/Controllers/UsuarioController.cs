@@ -5,7 +5,6 @@ using ProjAplicado.Business.Interfaces.Repositories;
 using ProjAplicado.Business.Interfaces.Services;
 using ProjAplicado.Business.Models;
 using ProjAplicado.Data.Context;
-using System.Linq.Expressions;
 
 namespace ProjAplicado.Api.Controllers
 {
