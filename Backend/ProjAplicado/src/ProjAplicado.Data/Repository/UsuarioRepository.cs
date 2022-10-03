@@ -1,4 +1,4 @@
-﻿using ProjAplicado.Business.Interfaces;
+﻿using ProjAplicado.Business.Interfaces.Repositories;
 using ProjAplicado.Business.Models;
 using ProjAplicado.Data.Context;
 

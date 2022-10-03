@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using ProjAplicado.Business.Intefaces;
+using ProjAplicado.Business.Interfaces.Repositories;
 using ProjAplicado.Business.Models;
 using ProjAplicado.Data.Context;
 

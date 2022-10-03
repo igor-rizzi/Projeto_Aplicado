@@ -9,6 +9,7 @@ namespace ProjAplicado.Api.Configuration
         public AutomapperConfig()
         {
             CreateMap<Usuario, UsuarioDto>().ReverseMap();
+            CreateMap<Vaga, VagaDto>().ReverseMap();
         }
     }
 }

@@ -12,5 +12,6 @@ namespace ProjAplicado.Data.Context
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Vaga> Vagas { get; set; }
     }
 }
