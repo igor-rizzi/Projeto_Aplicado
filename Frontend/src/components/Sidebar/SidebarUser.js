@@ -2,9 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import AdminDropdown from "components/Dropdowns/AdminDropdown";
-
-export default function Sidebar() {
+export default function SidebarUser() {
   const [collapseShow, setCollapseShow] = React.useState("hidden");
   return (
     <>
@@ -23,12 +21,12 @@ export default function Sidebar() {
             className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
             to="/"
           >
-            HIREDEV
+            HIRWDAWEDEV
           </Link>
           {/* User */}
           <ul className="md:hidden items-center flex flex-wrap list-none">
             <li className="inline-block relative">
-              <AdminDropdown />
+              <UserDropdown />
             </li>
           </ul>
           {/* Collapse */}
@@ -44,7 +42,7 @@ export default function Sidebar() {
                 <div className="w-6/12">
                   <Link
                     className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
-                    to="/"
+                    to="/user"
                   >
                     HIREDEV
                   </Link>
@@ -84,11 +82,11 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/admin/dashboard") !== -1
+                    (window.location.href.indexOf("/user") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/admin/dashboard"
+                  to="/user"
                 >
                   <i
                     className={
@@ -110,7 +108,7 @@ export default function Sidebar() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/admin"
+                  to="/user"
                 >
                   <i
                     className={
@@ -132,7 +130,7 @@ export default function Sidebar() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/admin"
+                  to="/user"
                 >
                   <i
                     className={
@@ -154,7 +152,7 @@ export default function Sidebar() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/admin/tables"
+                  to="/user/tables"
                 >
                   <i
                     className={
@@ -186,7 +184,7 @@ export default function Sidebar() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/admin/settings"
+                  to="/user/settings"
                 >
                   <i
                     className={

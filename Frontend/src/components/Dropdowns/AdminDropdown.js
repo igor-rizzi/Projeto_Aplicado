@@ -2,7 +2,7 @@ import { createPopper } from "@popperjs/core";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const UserDropdown = () => {
+const AdminDropdown = () => {
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
   const btnDropdownRef = React.createRef();
@@ -32,7 +32,7 @@ const UserDropdown = () => {
             <img
               alt="..."
               className="w-full rounded-full align-middle border-none shadow-lg"
-              src={require("assets/img/pessoa1.jpg")}
+              src={require("assets/img/team-1-800x800.jpg")}
             />
           </span>
         </div>
@@ -44,28 +44,37 @@ const UserDropdown = () => {
           "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
         }
       >
-        <Link to="/user/tables">
+        <a
+          href="#"
+          className={
+            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+          }
+          onClick={(e) => e.preventDefault()}
+        >
+          Cadastrar Vagas
+        </a>
+        <Link to="/admin">
           <a
             href="#"
             className={
               "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
             }
           >
-            Minhas Vagas
+            Encontrar Candidatos
           </a>
         </Link>
-        <Link to="/user">
+        <Link to="/admin/tables">
           <a
             href="#"
             className={
               "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
             }
           >
-            Encontrar Vagas
+            Vagas Cadastradas
           </a>
         </Link>
         <div className="h-0 my-2 border border-solid border-blueGray-100" />
-        <Link to="/user/settings">
+        <Link to="/admin/settings">
           <a
             href="#"
             className={
@@ -80,4 +89,4 @@ const UserDropdown = () => {
   );
 };
 
-export default UserDropdown;
+export default AdminDropdown;

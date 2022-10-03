@@ -1,6 +1,6 @@
-import AdminDropdown from "components/Dropdowns/AdminDropdown";
+import UserDropdown from "components/Dropdowns/UserDropdown";
 
-export default function Navbar() {
+export default function UserNavbar() {
   return (
     <>
       {/* Navbar */}
@@ -29,7 +29,7 @@ export default function Navbar() {
           </form>
           {/* User */}
           <ul className="flex-col md:flex-row list-none items-center hidden md:flex">
-            <AdminDropdown />
+            <UserDropdown />
           </ul>
         </div>
       </nav>

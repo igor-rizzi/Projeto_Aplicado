@@ -3,11 +3,12 @@ import { Redirect, Route, Switch } from "react-router-dom";
 // components
 
 import FooterAdmin from "components/Footers/FooterAdmin.js";
-import AdminNavbar from "components/Navbars/AdminNavbar.js";
-import Sidebar from "components/Sidebar/Sidebar.js";
+import SidebarUser from "components/Sidebar/SidebarUser.js";
 
 // views
 
+import HeaderStats from "components/Headers/HeaderStats";
+import UserNavbar from "components/Navbars/UserNavbar";
 import Dashboard from "views/userAdmin/Dashboard";
 import Settings from "views/userAdmin/Settings";
 import Tables from "views/userAdmin/Tables";
@@ -15,10 +16,11 @@ import Tables from "views/userAdmin/Tables";
 export default function UserAdmin() {
   return (
     <>
-      <Sidebar />
+      <SidebarUser />
       <div className="relative md:ml-64 bg-blueGray-100">
-        <AdminNavbar />
+        <UserNavbar />
         {/* Header */}
+        <HeaderStats />
         <div className="px-4 md:px-10 mx-auto w-full -m-24">
           <Switch>
             <Route path="/user" exact component={Dashboard} />
