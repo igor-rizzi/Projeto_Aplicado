@@ -232,13 +232,10 @@ export default function Landing() {
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">SENAI</h5>
                     <p className="mt-1 text-sm text-blueGray-400 font-semibold">
-                      Serviço Nacional de Aprendizagem Industrial (SENAI) é uma
-                      instituição privada brasileira de interesse público, sem
-                      fins lucrativos, com personalidade jurídica de direito
-                      privado, estando fora da administração pública. Foi
-                      apontado pela Organização das Nações Unidas (ONU) em 2014
-                      como uma das principais instituições educacionais do
-                      Hemisfério sul.
+                      Serviço Nacional de Aprendizagem Industrial é uma
+                      instituição privada sem fins lucrativos. Foi apontado pela
+                      Organização das Nações Unidas (ONU) em 2014 como uma das
+                      principais instituições educacionais do Hemisfério sul.
                     </p>
                   </div>
                 </div>
