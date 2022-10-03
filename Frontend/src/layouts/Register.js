@@ -18,9 +18,9 @@ export default function RegisterLayout() {
         <section className="relative w-full h-full py-40 min-h-screen">
           <div className="absolute top-0 w-full h-full bg-blueGray-800 bg-no-repeat bg-full"></div>
           <Switch>
-            <Route path="/register" exact component={Register} />
-            <Route path="/registerCnpj" exact component={RegisterCnpj} />
-            <Redirect from="/register" to="/register" />
+            <Route path="/registrar" exact component={Register} />
+            <Route path="/registrar/cnpj" exact component={RegisterCnpj} />
+            <Redirect from="/registrar" to="/registrar" />
           </Switch>
           <FooterSmall absolute />
         </section>

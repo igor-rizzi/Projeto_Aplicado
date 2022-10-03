@@ -42,7 +42,7 @@ export default function SidebarUser() {
                 <div className="w-6/12">
                   <Link
                     className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
-                    to="/user"
+                    to="/usuario"
                   >
                     HIREDEV
                   </Link>
@@ -86,7 +86,7 @@ export default function SidebarUser() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/user"
+                  to="/usuario"
                 >
                   <i
                     className={
@@ -108,7 +108,7 @@ export default function SidebarUser() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/user"
+                  to="/usuario"
                 >
                   <i
                     className={
@@ -130,7 +130,7 @@ export default function SidebarUser() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/user"
+                  to="/usuario"
                 >
                   <i
                     className={
@@ -152,7 +152,7 @@ export default function SidebarUser() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/user/tables"
+                  to="/usuario/vagas"
                 >
                   <i
                     className={
@@ -184,7 +184,7 @@ export default function SidebarUser() {
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/user/settings"
+                  to="/usuario/configuracoes"
                 >
                   <i
                     className={

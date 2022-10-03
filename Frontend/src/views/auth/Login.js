@@ -85,7 +85,7 @@ export default function Login() {
                   </div>
 
                   <div className="text-center mt-6">
-                    <Link to="/user" className="text-blueGray-200">
+                    <Link to="/usuario" className="text-blueGray-200">
                       <button
                         className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                         type="button"
@@ -99,7 +99,7 @@ export default function Login() {
             </div>
             <div className="flex flex-wrap mt-6 relative">
               <div className="w-1/2">
-                <Link to="/register/register" className="text-blueGray-200">
+                <Link to="/registrar" className="text-blueGray-200">
                   <small>Criar uma conta</small>
                 </Link>
               </div>
@@ -115,7 +115,7 @@ export default function Login() {
             </div>
             <div className="flex flex-wrap relative">
               <div className=" text-right">
-                <Link to="/register/registerCnpj" className="text-blueGray-200">
+                <Link to="/registrar/cnpj" className="text-blueGray-200">
                   <small>Criar uma conta empresarial</small>
                 </Link>
               </div>

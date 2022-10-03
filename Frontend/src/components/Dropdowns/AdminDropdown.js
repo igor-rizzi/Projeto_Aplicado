@@ -53,7 +53,7 @@ const AdminDropdown = () => {
         >
           Cadastrar Vagas
         </a>
-        <Link to="/admin">
+        <Link to="/empresa">
           <a
             href="#"
             className={
@@ -63,7 +63,7 @@ const AdminDropdown = () => {
             Encontrar Candidatos
           </a>
         </Link>
-        <Link to="/admin/tables">
+        <Link to="/empresa/vagas">
           <a
             href="#"
             className={
@@ -74,7 +74,7 @@ const AdminDropdown = () => {
           </a>
         </Link>
         <div className="h-0 my-2 border border-solid border-blueGray-100" />
-        <Link to="/admin/settings">
+        <Link to="/empresa/configuracoes">
           <a
             href="#"
             className={

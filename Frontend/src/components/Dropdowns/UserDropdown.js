@@ -44,7 +44,7 @@ const UserDropdown = () => {
           "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
         }
       >
-        <Link to="/user/tables">
+        <Link to="/usuario/vagas">
           <a
             href="#"
             className={
@@ -54,7 +54,7 @@ const UserDropdown = () => {
             Minhas Vagas
           </a>
         </Link>
-        <Link to="/user">
+        <Link to="/usuario">
           <a
             href="#"
             className={
@@ -65,7 +65,7 @@ const UserDropdown = () => {
           </a>
         </Link>
         <div className="h-0 my-2 border border-solid border-blueGray-100" />
-        <Link to="/user/settings">
+        <Link to="/usuario/configuracoes">
           <a
             href="#"
             className={

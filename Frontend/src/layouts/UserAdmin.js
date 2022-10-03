@@ -23,10 +23,10 @@ export default function UserAdmin() {
         <HeaderStats />
         <div className="px-4 md:px-10 mx-auto w-full -m-24">
           <Switch>
-            <Route path="/user" exact component={Dashboard} />
-            <Route path="/user/tables" exact component={Tables} />
-            <Route path="/user/settings" exact component={Settings} />
-            <Redirect from="/user" to="/user/tables" />
+            <Route path="/usuario" exact component={Dashboard} />
+            <Route path="/usuario/vagas" exact component={Tables} />
+            <Route path="/usuario/configuracoes" exact component={Settings} />
+            <Redirect from="/usuario" to="/usuario" />
           </Switch>
           <FooterAdmin />
         </div>

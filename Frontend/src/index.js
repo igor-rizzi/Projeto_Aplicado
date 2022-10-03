@@ -18,10 +18,10 @@ import Index from "views/Index.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/admin" component={Admin} />
+      <Route path="/empresa" component={Admin} />
       <Route path="/auth" component={Auth} />
-      <Route path="/user" component={UserAdmin} />
-      <Route path="/register" component={RegisterLayout} />
+      <Route path="/usuario" component={UserAdmin} />
+      <Route path="/registrar" component={RegisterLayout} />
       <Route path="/" exact component={Index} />
       <Redirect from="*" to="/" />
     </Switch>
