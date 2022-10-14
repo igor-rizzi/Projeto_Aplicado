@@ -19,7 +19,7 @@ namespace ProjAplicado.Api.Controllers
         private readonly IMapper _mapper;
         private readonly ApiDbContext _dbContext;
 
-        public CandidatoController(
+        public EmpresaController(
             IEmpresaRepository empresaRepository, 
             IEmpresaService empresaService, 
             IMapper mapper, ApiDbContext dbContext)
