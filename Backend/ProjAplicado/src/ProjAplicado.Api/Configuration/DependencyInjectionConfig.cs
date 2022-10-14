@@ -14,10 +14,12 @@ namespace ProjAplicado.Api.Configuration
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IVagaRepository, VagaRepository>();
             services.AddScoped<ICandidatoRepository, CandidatoRepository>();
+            services.AddScoped<IEmpresaRepository, EmpresaRepository>();
 
             services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<IVagaService, VagaService>();
             services.AddScoped<ICandidatoService, CandidatoService>();
+            services.AddScoped<IEmpresaService, EmpresaService>();
 
             return services;
         }
