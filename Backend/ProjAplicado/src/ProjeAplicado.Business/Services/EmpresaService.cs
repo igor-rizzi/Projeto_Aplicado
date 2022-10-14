@@ -4,7 +4,7 @@ namespace ProjAplicado.Business.Services
     {
         private readonly IEmpresaRepository _empresaRepository;
 
-        public UsuarioService(IEmpresaRepository empresaRepository)
+        public EmpresaService(IEmpresaRepository empresaRepository)
         {
             _empresaRepository = empresaRepository;
         }
