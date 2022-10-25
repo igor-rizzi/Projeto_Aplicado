@@ -12,6 +12,7 @@ namespace ProjAplicado.Data.Mappings
             builder.Property(u => u.User).IsRequired();
             builder.Property(u => u.UserEmail).IsRequired();
             builder.Property(u => u.Password).IsRequired();
+            builder.Property(u => u.TipoUsuario).IsRequired();
         }
     }
 }

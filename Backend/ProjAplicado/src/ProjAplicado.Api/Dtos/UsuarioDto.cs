@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ProjAplicado.Business.Models.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace ProjAplicado.Api.Dtos
 {
@@ -18,6 +19,9 @@ namespace ProjAplicado.Api.Dtos
         [Required(ErrorMessage = "O campo de Senha é obrigatório!")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "O campo Tipo Usuário é obrigatório!")]
+        public int TipoUsuario { get; set; }
 
     }
 }
