@@ -36,7 +36,6 @@ export default function Navbar(props) {
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="/auth"
-                  target="_blank"
                 >
                   <p>ENTRAR</p>
                 </a>
@@ -46,7 +45,6 @@ export default function Navbar(props) {
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="/registrar"
-                  target="_blank"
                 >
                   <p>SOU CANDIDATO</p>
                 </a>
@@ -56,7 +54,6 @@ export default function Navbar(props) {
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="/registrar/cnpj"
-                  target="_blank"
                 >
                   <p>SOU RECRUTADOR</p>
                 </a>

@@ -39,7 +39,6 @@ export default function Navbar(props) {
                 <a
                   className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold mr-4"
                   href="/auth"
-                  target="_blank"
                 >
                   <p>JÁ POSSUO LOGIN</p>
                 </a>
