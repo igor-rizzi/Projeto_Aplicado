@@ -44,7 +44,7 @@ const UserDropdown = () => {
           "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
         }
       >
-        <Link to="/usuario/vagas">
+        <Link to="/usuario/minhasVagas">
           <a
             href="#"
             className={
@@ -54,7 +54,7 @@ const UserDropdown = () => {
             Minhas Vagas
           </a>
         </Link>
-        <Link to="/usuario">
+        <Link to="/usuario/vagas">
           <a
             href="#"
             className={

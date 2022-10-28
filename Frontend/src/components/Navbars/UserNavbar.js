@@ -12,7 +12,7 @@ export default function UserNavbar() {
             href="#"
             onClick={(e) => e.preventDefault()}
           >
-            Estatísticas
+            VAGAS
           </a>
           {/* Form */}
           <form className="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">

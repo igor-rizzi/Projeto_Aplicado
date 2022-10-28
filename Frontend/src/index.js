@@ -12,7 +12,7 @@ import Auth from "layouts/Auth.js";
 // views without layouts
 
 import RegisterLayout from "layouts/Register";
-import UserAdmin from "layouts/UserAdmin";
+import User from "layouts/User";
 import Index from "views/Index.js";
 
 ReactDOM.render(
@@ -20,7 +20,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/empresa" component={Admin} />
       <Route path="/auth" component={Auth} />
-      <Route path="/usuario" component={UserAdmin} />
+      <Route path="/usuario" component={User} />
       <Route path="/registrar" component={RegisterLayout} />
       <Route path="/" exact component={Index} />
       <Redirect from="*" to="/" />
