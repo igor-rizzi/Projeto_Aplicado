@@ -8,8 +8,8 @@ export default function RegisterCnpj() {
           <div className="w-full lg:w-6/12 px-4">
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
               <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-                <div className="text-black-400 text-center mb-3 mt-10 font-bold">
-                  Ótima escolha, recrutador! ;)
+                <div className="text-black-400 text-center mb-8 mt-10 font-bold">
+                  HIREDEV PARA EMPRESAS
                 </div>
                 <form>
                   <div className="relative w-full mb-3">
@@ -49,19 +49,6 @@ export default function RegisterCnpj() {
                       type="email"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                       placeholder="Digite o email (de preferência corporativo)"
-                    />
-                  </div>
-
-                  <div className="relative w-full mb-3">
-                    <label
-                      className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                      htmlFor="grid-password"
-                    >
-                      Telefone
-                    </label>
-                    <input
-                      className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Digite o telefone para contato"
                     />
                   </div>
 
