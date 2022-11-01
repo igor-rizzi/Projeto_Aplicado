@@ -12,6 +12,7 @@ namespace ProjAplicado.Api.Configuration
             CreateMap<Vaga, VagaDto>().ReverseMap();
             CreateMap<Candidato, CandidatoDto>().ReverseMap();
             CreateMap<Empresa, EmpresaDto>().ReverseMap();
+            CreateMap<UsuarioEmpresa, UsuarioEmpresaDto>().ReverseMap();
         }
     }
 }
