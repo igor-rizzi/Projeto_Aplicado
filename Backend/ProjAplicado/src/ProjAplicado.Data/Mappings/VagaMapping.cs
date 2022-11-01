@@ -10,8 +10,6 @@ namespace ProjAplicado.Data.Mappings
         {
             builder.HasKey(v => v.Id);
             builder.Property(v => v.Descricao).IsRequired();
-            builder.Property(v => v.Requisitos).IsRequired();
-            builder.Property(v => v.Habilidades).IsRequired();
             builder.Property(v => v.Salario).IsRequired();
         }
     }
