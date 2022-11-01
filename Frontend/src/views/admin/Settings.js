@@ -31,12 +31,12 @@ export default function Settings() {
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
-                        Nome de usuário
+                        Nome Empresarial
                       </label>
                       <input
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="senai.sc"
+                        defaultValue="Serviço Nacional De Aprendizagem Industrial SC"
                       />
                     </div>
                   </div>
@@ -61,28 +61,13 @@ export default function Settings() {
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
-                        Nome Empresarial
+                        Nome Fantasia
                       </label>
                       <input
                         disabled={true}
                         type="text"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="Serviço Nacional De Aprendizagem Industrial"
-                      />
-                    </div>
-                  </div>
-                  <div className="w-full lg:w-6/12 px-4">
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                        htmlFor="grid-password"
-                      >
-                        Telefone
-                      </label>
-                      <input
-                        type={"text"}
-                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        defaultValue="(49) 9 9999-9999"
+                        defaultValue="SENAI SC"
                       />
                     </div>
                   </div>

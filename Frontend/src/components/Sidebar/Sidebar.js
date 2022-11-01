@@ -84,7 +84,7 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/admin/dashboard") !== -1
+                    (window.location.href.indexOf("/empresa/dashboard") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
@@ -93,12 +93,12 @@ export default function Sidebar() {
                   <i
                     className={
                       "fas fa-tv mr-2 text-sm " +
-                      (window.location.href.indexOf("/admin/dashboard") !== -1
+                      (window.location.href.indexOf("/empresa/dashboard") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  Estatísticas
+                  ESTATÍSTICAS
                 </Link>
               </li>
 
@@ -106,21 +106,22 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/auth/login") !== -1
+                    (window.location.href.indexOf("/empresa/candidatos") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/empresa"
+                  to="/empresa/candidatos"
                 >
                   <i
                     className={
-                      "fas fa-table mr-2 text-sm " +
-                      (window.location.href.indexOf("/auth/login") !== -1
+                      "fas fa-search mr-2 text-sm " +
+                      (window.location.href.indexOf("/empresa/candidatos") !==
+                      -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  Cadastrar Vagas
+                  ENCONTRAR CANDIDATOS
                 </Link>
               </li>
 
@@ -128,21 +129,21 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/auth/login") !== -1
+                    (window.location.href.indexOf("/empresa/cadastrar") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/empresa"
+                  to="/empresa/cadastrar"
                 >
                   <i
                     className={
-                      "fas fa-map-marked mr-2 text-sm " +
-                      (window.location.href.indexOf("/auth/login") !== -1
+                      "fas fa-plus mr-2 text-sm " +
+                      (window.location.href.indexOf("/empresa/cadastrar") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
-                  ></i>
-                  Encontrar Candidatos
+                  ></i>{" "}
+                  CADASTRAR VAGAS
                 </Link>
               </li>
 
@@ -150,7 +151,7 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/admin/tables") !== -1
+                    (window.location.href.indexOf("/empresa/vagas") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
@@ -158,13 +159,13 @@ export default function Sidebar() {
                 >
                   <i
                     className={
-                      "fa fa-info-circle mr-2 text-sm " +
-                      (window.location.href.indexOf("/admin/tables") !== -1
+                      "fas fa-list mr-2 text-sm " +
+                      (window.location.href.indexOf("/empresa/vagas") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
-                  ></i>
-                  MINHAS VAGAS
+                  ></i>{" "}
+                  VAGAS CADASTRADAS
                 </Link>
               </li>
             </ul>
@@ -182,7 +183,8 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/admin/settings") !== -1
+                    (window.location.href.indexOf("/empresa/configuracoes") !==
+                    -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
@@ -191,7 +193,9 @@ export default function Sidebar() {
                   <i
                     className={
                       "fas fa-tools mr-2 text-sm " +
-                      (window.location.href.indexOf("/admin/settings") !== -1
+                      (window.location.href.indexOf(
+                        "/empresa/configuracoes"
+                      ) !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
