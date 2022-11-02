@@ -106,39 +106,16 @@ export default function Sidebar() {
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/empresa/candidatos") !== -1
+                    (window.location.href.indexOf("/empresa/nova") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
-                  to="/empresa/candidatos"
-                >
-                  <i
-                    className={
-                      "fas fa-search mr-2 text-sm " +
-                      (window.location.href.indexOf("/empresa/candidatos") !==
-                      -1
-                        ? "opacity-75"
-                        : "text-blueGray-300")
-                    }
-                  ></i>{" "}
-                  ENCONTRAR CANDIDATOS
-                </Link>
-              </li>
-
-              <li className="items-center">
-                <Link
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (window.location.href.indexOf("/empresa/cadastrar") !== -1
-                      ? "text-lightBlue-500 hover:text-lightBlue-600"
-                      : "text-blueGray-700 hover:text-blueGray-500")
-                  }
-                  to="/empresa/cadastrar"
+                  to="/empresa/nova"
                 >
                   <i
                     className={
                       "fas fa-plus mr-2 text-sm " +
-                      (window.location.href.indexOf("/empresa/cadastrar") !== -1
+                      (window.location.href.indexOf("/empresa/nova") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }

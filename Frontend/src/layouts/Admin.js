@@ -10,6 +10,7 @@ import Sidebar from "components/Sidebar/Sidebar.js";
 // views
 
 import Dashboard from "views/admin/Dashboard.js";
+import New from "views/admin/New.js";
 import Settings from "views/admin/Settings.js";
 import Tables from "views/admin/Tables.js";
 
@@ -26,6 +27,7 @@ export default function Admin() {
             <Route path="/empresa/dashboard" exact component={Dashboard} />
             <Route path="/empresa/configuracoes" exact component={Settings} />
             <Route path="/empresa/vagas" exact component={Tables} />
+            <Route path="/empresa/nova" exact component={New} />
             <Redirect from="/empresa" to="/empresa/dashboard" />
           </Switch>
           <FooterAdmin />

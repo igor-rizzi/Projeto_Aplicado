@@ -38,7 +38,7 @@ export default function Tables({ color }) {
             {vaga.salario}
           </td>
           <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-            <i className="fas fa-circle text-orange-500 mr-2"></i> Pendente
+            <i className="fas fa-circle text-green mr-2"></i> Completo
           </td>
           <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
             <TableDropdown />
