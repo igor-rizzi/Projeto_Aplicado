@@ -13,7 +13,7 @@ namespace ProjAplicado.Data.Migrations
                 name: "Vagas",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false),
                     Descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Requisitos = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Salario = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -29,13 +29,6 @@ namespace ProjAplicado.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Vagas");
-
-            migrationBuilder.AddColumn<Guid>(
-                name: "UsuarioId",
-                table: "Usuarios",
-                type: "uniqueidentifier",
-                nullable: false,
-                defaultValue: new Guid("00000000-0000-0000-0000-000000000000"));
         }
     }
 }

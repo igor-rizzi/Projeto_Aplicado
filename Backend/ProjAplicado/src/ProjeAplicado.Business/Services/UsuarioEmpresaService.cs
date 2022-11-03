@@ -13,9 +13,10 @@ namespace ProjAplicado.Business.Services
             _usuarioEmpresaRepository = usuarioEmpresaRepository;
         }
 
-        public Task<bool> Adicionar(UsuarioEmpresa usuarioEmpresa)
+        public async Task<bool> Adicionar(UsuarioEmpresa usuarioEmpresa)
         {
-            throw new NotImplementedException();
+            await _usuarioEmpresaRepository.Adicionar(usuarioEmpresa);
+            return true;
         }
     }
 }

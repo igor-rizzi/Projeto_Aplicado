@@ -46,8 +46,8 @@ namespace ProjAplicado.Api.Controllers
             return vagas;
         }
 
-        [HttpGet("{id:Guid}")]
-        public async Task<VagaDto> ObterPorId(Guid id)
+        [HttpGet("{id}")]
+        public async Task<VagaDto> ObterPorId(int id)
         {
             var vaga = _mapper.Map<VagaDto>(await _vagaRepository.ObterPorId(id));
 

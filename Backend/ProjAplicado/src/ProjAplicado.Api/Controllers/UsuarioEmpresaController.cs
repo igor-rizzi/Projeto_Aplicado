@@ -49,8 +49,8 @@ namespace ProjAplicado.Api.Controllers
             return usuarios;
         }
 
-        [HttpGet("{id:Guid}")]
-        public async Task<UsuarioEmpresaDto> ObterPorId(Guid id)
+        [HttpGet("{id}")]
+        public async Task<UsuarioEmpresaDto> ObterPorId(int id)
         {
             var usuario = _mapper.Map<UsuarioEmpresaDto>(await _usuarioEmpresaRepository.ObterPorId(id));
 

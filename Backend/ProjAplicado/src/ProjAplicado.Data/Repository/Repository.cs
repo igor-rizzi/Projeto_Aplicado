@@ -22,7 +22,7 @@ namespace ProjAplicado.Data.Repository
             return await DbSet.AsNoTracking().Where(predicate).ToListAsync();
         }
 
-        public virtual async Task<TEntity> ObterPorId(Guid id)
+        public virtual async Task<TEntity> ObterPorId(int id)
         {
             return await DbSet.FindAsync(id);
         }
@@ -44,7 +44,7 @@ namespace ProjAplicado.Data.Repository
             await SaveChanges();
         }
 
-        public virtual async Task Remover(Guid id)
+        public virtual async Task Remover(int id)
         {
             DbSet.Remove(new TEntity { Id = id });
             await SaveChanges();

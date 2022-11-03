@@ -5,7 +5,7 @@ namespace ProjAplicado.Api.Dtos
     public class EmpresaDto
     {
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigatório!")]
         [StringLength(30, MinimumLength = 4)]

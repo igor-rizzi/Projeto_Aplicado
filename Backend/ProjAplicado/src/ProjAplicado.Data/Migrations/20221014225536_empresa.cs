@@ -13,7 +13,7 @@ namespace ProjAplicado.Data.Migrations
                 name: "Empresas",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false),
                     RazaoSocial = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Visoes = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Valores = table.Column<string>(type: "nvarchar(max)", nullable: false),

@@ -24,9 +24,9 @@ namespace ProjAplicado.Data.Migrations
 
             modelBuilder.Entity("ProjAplicado.Business.Models.Candidato", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
 
                     b.Property<int>("AnosExperiencia")
                         .HasColumnType("int");
@@ -67,14 +67,14 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Candidatos");
+                    b.ToTable("Candidatos", (string)null);
                 });
 
             modelBuilder.Entity("ProjAplicado.Business.Models.Empresa", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
 
                     b.Property<string>("CNPJ")
                         .IsRequired()
@@ -102,14 +102,14 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Empresas");
+                    b.ToTable("Empresas", (string)null);
                 });
 
             modelBuilder.Entity("ProjAplicado.Business.Models.Usuario", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -128,14 +128,14 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Usuarios", (string)null);
                 });
 
             modelBuilder.Entity("ProjAplicado.Business.Models.UsuarioEmpresa", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
 
                     b.Property<string>("CNPJ")
                         .IsRequired()
@@ -158,14 +158,14 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UsuariosEmpresa");
+                    b.ToTable("UsuariosEmpresa", (string)null);
                 });
 
             modelBuilder.Entity("ProjAplicado.Business.Models.Vaga", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int");
 
                     b.Property<string>("Descricao")
                         .IsRequired()
@@ -177,7 +177,7 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Vagas");
+                    b.ToTable("Vagas", (string)null);
                 });
 #pragma warning restore 612, 618
         }
