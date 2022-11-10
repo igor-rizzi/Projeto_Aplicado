@@ -10,11 +10,13 @@ export default function New() {
   const [erro, setErro] = useState();
   const history = useHistory();
 
+  const id = new Date().getTime();
+
   console.log(titulo, salario);
 
   const cadastraVaga = async () => {
     await Api.post("/Vaga", {
-      id: "3fa85f64-5717-4562-b8fc-2c963f66afa6",
+      id: id,
       descricao: titulo,
       salario: salario,
     })
