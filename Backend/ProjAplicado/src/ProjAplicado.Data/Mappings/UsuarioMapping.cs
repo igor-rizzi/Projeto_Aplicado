@@ -8,7 +8,7 @@ namespace ProjAplicado.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Usuario> builder)
         {
-            builder.HasKey(u => u.Id);
+            builder.Property(u => u.Id).UseIdentityColumn().ValueGeneratedOnAdd();
             builder.Property(u => u.User).IsRequired();
             builder.Property(u => u.UserEmail).IsRequired();
             builder.Property(u => u.Password).IsRequired();

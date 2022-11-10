@@ -8,7 +8,7 @@ namespace ProjAplicado.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Vaga> builder)
         {
-            builder.HasKey(v => v.Id);
+            builder.Property(v => v.Id).UseIdentityColumn().ValueGeneratedOnAdd();
             builder.Property(v => v.Descricao).IsRequired();
             builder.Property(v => v.Salario).IsRequired();
         }

@@ -28,6 +28,8 @@ namespace ProjAplicado.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
                     b.Property<int>("AnosExperiencia")
                         .HasColumnType("int");
 
@@ -67,7 +69,7 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Candidatos", (string)null);
+                    b.ToTable("Candidatos");
                 });
 
             modelBuilder.Entity("ProjAplicado.Business.Models.Empresa", b =>
@@ -75,6 +77,8 @@ namespace ProjAplicado.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CNPJ")
                         .IsRequired()
@@ -102,7 +106,7 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Empresas", (string)null);
+                    b.ToTable("Empresas");
                 });
 
             modelBuilder.Entity("ProjAplicado.Business.Models.Usuario", b =>
@@ -110,6 +114,8 @@ namespace ProjAplicado.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -128,7 +134,7 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Usuarios", (string)null);
+                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("ProjAplicado.Business.Models.UsuarioEmpresa", b =>
@@ -136,6 +142,8 @@ namespace ProjAplicado.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CNPJ")
                         .IsRequired()
@@ -158,7 +166,7 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UsuariosEmpresa", (string)null);
+                    b.ToTable("UsuariosEmpresa");
                 });
 
             modelBuilder.Entity("ProjAplicado.Business.Models.Vaga", b =>
@@ -166,6 +174,8 @@ namespace ProjAplicado.Data.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Descricao")
                         .IsRequired()
@@ -177,7 +187,7 @@ namespace ProjAplicado.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Vagas", (string)null);
+                    b.ToTable("Vagas");
                 });
 #pragma warning restore 612, 618
         }
