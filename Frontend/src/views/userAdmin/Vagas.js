@@ -2,7 +2,9 @@
 
 import { Link } from "react-router-dom";
 
-export default function Vagas({ color }) {
+export default function Vagas() {
+  const color = "light";
+
   return (
     <>
       <div className="flex flex-wrap">
@@ -22,7 +24,7 @@ export default function Vagas({ color }) {
                       (color === "light" ? "text-blueGray-700" : "text-white")
                     }
                   >
-                    Vagas Abertas
+                    Vagas abertas
                   </h3>
                 </div>
               </div>
@@ -107,7 +109,7 @@ export default function Vagas({ color }) {
                             className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-2 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                             type="button"
                           >
-                            CANDIDATAR
+                            CANDIDATAR-SE
                           </button>
                         </Link>
                       </div>
@@ -148,7 +150,7 @@ export default function Vagas({ color }) {
                             className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-2 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                             type="button"
                           >
-                            CANDIDATAR
+                            CANDIDATAR-SE
                           </button>
                         </Link>
                       </div>
@@ -188,7 +190,7 @@ export default function Vagas({ color }) {
                             className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-2 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                             type="button"
                           >
-                            CANDIDATAR
+                            CANDIDATAR-SE
                           </button>
                         </Link>
                       </div>
@@ -229,7 +231,7 @@ export default function Vagas({ color }) {
                             className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-2 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                             type="button"
                           >
-                            CANDIDATAR
+                            CANDIDATAR-SE
                           </button>
                         </Link>
                       </div>
@@ -270,7 +272,7 @@ export default function Vagas({ color }) {
                             className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-2 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                             type="button"
                           >
-                            CANDIDATAR
+                            CANDIDATAR-SE
                           </button>
                         </Link>
                       </div>

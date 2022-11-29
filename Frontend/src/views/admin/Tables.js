@@ -1,4 +1,5 @@
 import TableDropdown from "components/Dropdowns/TableDropdown.js";
+import LoadingSpinner from "components/Loading/Loading";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Api from "services/api";
@@ -129,26 +130,8 @@ export default function Tables({ color }) {
           </div>
         </div>
       ) : (
-        <div
-          className={
-            "relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded " +
-            (color === "light" ? "bg-white" : "bg-lightBlue-900 text-white")
-          }
-        >
-          <div className="py-3 border-0 ">
-            <div className="flex-wrap items-center">
-              <div className="relative px-4 flex-grow">
-                <h3
-                  className={
-                    "font-semibold text-lg" +
-                    (color === "light" ? "text-blueGray-700" : "text-white")
-                  }
-                >
-                  Atualizando Vagas ....
-                </h3>
-              </div>
-            </div>
-          </div>
+        <div className="py-3 border-0 align-middle text-center flex items-center">
+          <LoadingSpinner />
         </div>
       )}
     </>
