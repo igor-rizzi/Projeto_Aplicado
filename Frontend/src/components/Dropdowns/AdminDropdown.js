@@ -44,15 +44,16 @@ const AdminDropdown = () => {
           "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
         }
       >
-        <a
-          href="#"
-          className={
-            "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-          }
-          onClick={(e) => e.preventDefault()}
-        >
-          Cadastrar Vagas
-        </a>
+        <Link to="/empresa/nova">
+          <a
+            href="#"
+            className={
+              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            }
+          >
+            Cadastrar Vagas
+          </a>
+        </Link>
         <Link to="/empresa">
           <a
             href="#"
@@ -61,16 +62,6 @@ const AdminDropdown = () => {
             }
           >
             Encontrar Candidatos
-          </a>
-        </Link>
-        <Link to="/empresa/nova">
-          <a
-            href="#"
-            className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
-            }
-          >
-            Cadatrar Vaga
           </a>
         </Link>
         <Link to="/empresa/vagas">
@@ -92,6 +83,16 @@ const AdminDropdown = () => {
             }
           >
             Configurações
+          </a>
+        </Link>
+        <Link to="/">
+          <a
+            href="#"
+            className={
+              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            }
+          >
+            Sair
           </a>
         </Link>
       </div>
