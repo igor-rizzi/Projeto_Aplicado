@@ -63,6 +63,16 @@ const AdminDropdown = () => {
             Encontrar Candidatos
           </a>
         </Link>
+        <Link to="/empresa/nova">
+          <a
+            href="#"
+            className={
+              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
+            }
+          >
+            Cadatrar Vaga
+          </a>
+        </Link>
         <Link to="/empresa/vagas">
           <a
             href="#"
