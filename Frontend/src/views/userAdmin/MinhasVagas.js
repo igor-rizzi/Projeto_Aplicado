@@ -109,7 +109,7 @@ export default function MinhasVagas() {
                             className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-2 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                             type="button"
                           >
-                            CANDIDATAR
+                            DETALHES
                           </button>
                         </Link>
                       </div>
