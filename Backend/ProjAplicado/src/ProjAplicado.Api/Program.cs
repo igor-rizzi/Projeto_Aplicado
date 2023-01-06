@@ -19,6 +19,8 @@ builder.Services.AddDbContext<ApiDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddIdentityConfiguration(builder.Configuration);
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddWebApiConfig();
@@ -28,6 +30,7 @@ builder.Services.ResolveDependencies();
 
 var app = builder.Build();
 
+app.UseAuthentication();
 app.UseWebApiConfig();
 
 app.Run();
