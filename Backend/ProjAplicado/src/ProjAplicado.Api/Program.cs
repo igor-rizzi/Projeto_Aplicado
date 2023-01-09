@@ -1,7 +1,6 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProjAplicado.Api.Configuration;
-using ProjAplicado.Business.Interfaces;
-using ProjAplicado.Business.Services;
 using ProjAplicado.Data.Context;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +23,11 @@ builder.Services.AddIdentityConfiguration(builder.Configuration);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddWebApiConfig();
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
 
 builder.Services.ResolveDependencies();
 

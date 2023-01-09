@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProjAplicado.Api.Dtos;
+using ProjAplicado.Business.Intefaces.Notification;
 using ProjAplicado.Business.Interfaces.Repositories;
 using ProjAplicado.Business.Interfaces.Services;
 using ProjAplicado.Business.Models;
@@ -12,7 +13,7 @@ namespace ProjAplicado.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CandidatoController : ControllerBase
+    public class CandidatoController : MainController
     {
         private readonly ICandidatoRepository _candidatoRepository;
         private readonly ICandidatoService _candidatoService;
@@ -22,7 +23,9 @@ namespace ProjAplicado.Api.Controllers
         public CandidatoController(
             ICandidatoRepository candidatoRepository, 
             ICandidatoService candidatoService, 
-            IMapper mapper, ApiDbContext dbContext)
+            IMapper mapper, 
+            ApiDbContext dbContext,
+            INotificador notificador): base(notificador)
         {
             _candidatoRepository = candidatoRepository;
             _candidatoService = candidatoService;
@@ -33,7 +36,7 @@ namespace ProjAplicado.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<CandidatoDto>> Adicionar(CandidatoDto candidatoDto)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomReponse(ModelState);
 
             var user = _mapper.Map<Candidato>(candidatoDto);
             await _candidatoService.Adicionar(user);

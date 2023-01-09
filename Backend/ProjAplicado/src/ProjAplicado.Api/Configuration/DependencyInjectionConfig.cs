@@ -1,5 +1,7 @@
-﻿using ProjAplicado.Business.Interfaces.Repositories;
+﻿using ProjAplicado.Business.Intefaces.Notification;
+using ProjAplicado.Business.Interfaces.Repositories;
 using ProjAplicado.Business.Interfaces.Services;
+using ProjAplicado.Business.Notificacoes;
 using ProjAplicado.Business.Services;
 using ProjAplicado.Data.Context;
 using ProjAplicado.Data.Repository;
@@ -22,6 +24,8 @@ namespace ProjAplicado.Api.Configuration
             services.AddScoped<ICandidatoService, CandidatoService>();
             services.AddScoped<IEmpresaService, EmpresaService>();
             services.AddScoped<IUsuarioEmpresaService, UsuarioEmpresaService>();
+
+            services.AddScoped<INotificador, Notificador>();
 
             return services;
         }
