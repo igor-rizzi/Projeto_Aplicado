@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProjAplicado.Api.Dtos;
+using ProjAplicado.Business.Intefaces.Notification;
 using ProjAplicado.Business.Interfaces.Repositories;
 using ProjAplicado.Business.Interfaces.Services;
 using ProjAplicado.Business.Models;
@@ -10,14 +11,18 @@ namespace ProjAplicado.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VagaController : ControllerBase
+    public class VagaController : MainController
     {
         private readonly IVagaRepository _vagaRepository;
         private readonly IVagaService _vagaService;
         private readonly IMapper _mapper;
         private readonly ApiDbContext _dbContext;
 
-        public VagaController(IVagaRepository vagaRepository, IVagaService vagaService, IMapper mapper, ApiDbContext dbContext)
+        public VagaController(IVagaRepository vagaRepository, 
+                              IVagaService vagaService, 
+                              IMapper mapper, 
+                              ApiDbContext dbContext,
+                              INotificador notificador) : base(notificador)
         {
             _vagaRepository = vagaRepository;
             _vagaService = vagaService;
@@ -28,14 +33,14 @@ namespace ProjAplicado.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<VagaDto>> Adicionar(VagaDto vagaDto)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomReponse(ModelState);
 
             var vaga = _mapper.Map<Vaga>(vagaDto);
             await _vagaService.Adicionar(vaga);
 
             _dbContext.SaveChanges();
 
-            return Ok();
+            return CustomResponse(vagaDto);
         }
 
         [HttpGet]

@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjAplicado.Api.Dtos;
+using ProjAplicado.Business.Intefaces.Notification;
 using ProjAplicado.Business.Interfaces.Repositories;
 using ProjAplicado.Business.Interfaces.Services;
 using ProjAplicado.Business.Models;
@@ -8,9 +10,10 @@ using ProjAplicado.Data.Context;
 
 namespace ProjAplicado.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioController : ControllerBase
+    public class UsuarioController : MainController
     {
         private readonly IUsuarioRepository _usuarioRepository;
         private readonly IUsuarioService _usuarioService;
@@ -21,7 +24,8 @@ namespace ProjAplicado.Api.Controllers
             IUsuarioRepository usuarioRepository,
             IUsuarioService usuarioService,
             IMapper mapper,
-            ApiDbContext dbContext)
+            ApiDbContext dbContext,
+            INotificador notificador) : base(notificador)
         {
             _usuarioRepository = usuarioRepository;
             _usuarioService = usuarioService;
@@ -39,9 +43,10 @@ namespace ProjAplicado.Api.Controllers
 
             _dbContext.SaveChanges();
 
-            return Ok();
+            return CustomResponse(usuarioDto);
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IEnumerable<UsuarioDto>> ObterTodos()
         {

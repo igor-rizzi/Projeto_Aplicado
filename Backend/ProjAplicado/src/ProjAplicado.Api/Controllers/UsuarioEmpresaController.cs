@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjAplicado.Api.Dtos;
+using ProjAplicado.Business.Intefaces.Notification;
 using ProjAplicado.Business.Interfaces.Repositories;
 using ProjAplicado.Business.Interfaces.Services;
 using ProjAplicado.Business.Models;
@@ -10,9 +12,10 @@ using ProjAplicado.Data.Repository;
 
 namespace ProjAplicado.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuarioEmpresaController : ControllerBase
+    public class UsuarioEmpresaController : MainController
     {
         private readonly IUsuarioEmpresaRepository _usuarioEmpresaRepository;
         private readonly IUsuarioEmpresaService _usuarioEmpresaService;
@@ -22,7 +25,8 @@ namespace ProjAplicado.Api.Controllers
         public UsuarioEmpresaController(IUsuarioEmpresaRepository usuarioEmpresaRepository, 
                                         IUsuarioEmpresaService usuarioEmpresaService, 
                                         IMapper mapper, 
-                                        ApiDbContext dbContext)
+                                        ApiDbContext dbContext,
+                                        INotificador notificador) : base(notificador)
         {
             _usuarioEmpresaRepository = usuarioEmpresaRepository;
             _usuarioEmpresaService = usuarioEmpresaService;
@@ -33,13 +37,13 @@ namespace ProjAplicado.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<UsuarioEmpresaDto>> Adicionar(UsuarioEmpresaDto usuarioEmpresaDto)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomReponse(ModelState);
 
             var user = _mapper.Map<UsuarioEmpresa>(usuarioEmpresaDto);
             await _usuarioEmpresaService.Adicionar(user);
 
             _dbContext.SaveChanges();
-            return Ok();
+            return CustomResponse(usuarioEmpresaDto);
         }
 
         [HttpGet]

@@ -1,7 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using ProjAplicado.Api.Dtos;
+using ProjAplicado.Api.Extensions;
 using ProjAplicado.Business.Intefaces.Notification;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
 
 namespace ProjAplicado.Api.Controllers
 {
@@ -10,13 +15,16 @@ namespace ProjAplicado.Api.Controllers
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly AppSettingsJWT _appSettingsJWT;
 
         public AuthController(SignInManager<IdentityUser> signInManager, 
                               UserManager<IdentityUser> userManager,
-                              INotificador notificador) : base(notificador)
+                              INotificador notificador,
+                              IOptions<AppSettingsJWT> appSettingsJwt) : base(notificador)
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _appSettingsJWT = appSettingsJwt.Value;
         }
 
         [HttpPost("nova-conta")]
@@ -36,7 +44,7 @@ namespace ProjAplicado.Api.Controllers
             if (result.Succeeded)
             {
                 await _signInManager.SignInAsync(user, false);
-                return CustomResponse(registerUserDto);
+                return CustomResponse(GerarJwt());
             }
             foreach(var error in result.Errors)
             {
@@ -55,7 +63,7 @@ namespace ProjAplicado.Api.Controllers
 
             if (result.Succeeded)
             {
-                return CustomResponse("Usuário logado com sucesso");
+                return CustomResponse(GerarJwt());
             }
 
             if (result.IsLockedOut)
@@ -64,6 +72,22 @@ namespace ProjAplicado.Api.Controllers
             }
 
             return CustomResponse("Usuário ou senha incorretos");
+        }
+
+        private string GerarJwt()
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_appSettingsJWT.Secret);
+            var token = tokenHandler.CreateToken(new SecurityTokenDescriptor
+            {
+                Issuer = _appSettingsJWT.Emissor,
+                Audience = _appSettingsJWT.ValidoEm,
+                Expires = DateTime.UtcNow.AddHours(_appSettingsJWT.ExpiracaoHora),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            });
+
+            var encodedToken = tokenHandler.WriteToken(token);
+            return encodedToken;
         }
     }
 }

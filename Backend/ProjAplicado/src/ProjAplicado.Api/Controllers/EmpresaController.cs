@@ -1,6 +1,8 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjAplicado.Api.Dtos;
+using ProjAplicado.Business.Intefaces.Notification;
 using ProjAplicado.Business.Interfaces.Repositories;
 using ProjAplicado.Business.Interfaces.Services;
 using ProjAplicado.Business.Models;
@@ -10,9 +12,10 @@ using ProjAplicado.Data.Repository;
 
 namespace ProjAplicado.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class EmpresaController : ControllerBase
+    public class EmpresaController : MainController
     {
         private readonly IEmpresaRepository _empresaRepository;
         private readonly IEmpresaService _empresaService;
@@ -22,7 +25,9 @@ namespace ProjAplicado.Api.Controllers
         public EmpresaController(
             IEmpresaRepository empresaRepository, 
             IEmpresaService empresaService, 
-            IMapper mapper, ApiDbContext dbContext)
+            IMapper mapper, 
+            ApiDbContext dbContext,
+            INotificador notificador) : base(notificador)
         {
             _empresaRepository = empresaRepository;
             _empresaService = empresaService;
@@ -40,9 +45,10 @@ namespace ProjAplicado.Api.Controllers
 
             _dbContext.SaveChanges();
 
-            return Ok();
+            return CustomResponse(empresaDto);
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IEnumerable<EmpresaDto>> ObterTodos()
         {

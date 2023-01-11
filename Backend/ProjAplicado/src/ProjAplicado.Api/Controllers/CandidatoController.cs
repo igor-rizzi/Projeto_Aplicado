@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjAplicado.Api.Dtos;
 using ProjAplicado.Business.Intefaces.Notification;
@@ -11,6 +12,7 @@ using ProjAplicado.Data.Repository;
 
 namespace ProjAplicado.Api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CandidatoController : MainController
@@ -43,9 +45,10 @@ namespace ProjAplicado.Api.Controllers
 
             _dbContext.SaveChanges();
 
-            return Ok();
+            return CustomResponse(candidatoDto);
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IEnumerable<CandidatoDto>> ObterTodos()
         {
